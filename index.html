@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>blog preview fabri2wavy</title>
+</head>
+<body>
+  <div class="cuadrado">
+    <div class="figura">
+      <div class="imagen">
+        <img src="./assets/images/illustration-article.svg" alt="Imagen Artística">
+      </div>
+      <div class="categoria">
+        <button>Learning
+        </button>
+      </div>
+      <div class="descripcion">
+        <h3>Posted on 21 Dec 2023</h3>
+        <h2>HTML & CSS Fundamentals
+        </h2>
+        <p>These languages ​​are essential for the structure and design of any website.</p>
+      </div>
+      <div class="avatar">
+        <img src="./assets/images/image-avatar.webp" alt="Avatar de Greg Hooper">
+        <h3>Greg Hooper</h3>
+      </div>
+    </div>
+  </div>
+  <div class="cursor"></div>
+  <script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = ${e.clientX}px;
+      cursor.style.top = ${e.clientY}px;
+    });
+  </script>
+</body>
+</html>
